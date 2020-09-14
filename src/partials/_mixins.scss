@@ -10,3 +10,9 @@
 @mixin listStyle{
     list-style: none;
 }
+
+@mixin myIcon($name){
+  .icon-#{$name}{
+    background-image: url("/icons/#{$name}.svg");
+  }
+}

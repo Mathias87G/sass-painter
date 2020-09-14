@@ -1,0 +1,91 @@
+header {
+  display: initial;
+    #topbar{
+        height:45px;
+        background-color: blue;
+        background-color: $nero;
+        color:$grigino;
+        @include flex;
+        justify-content: flex-end;
+        padding-right: 50px;
+        ul{
+            @include flex;
+            li{
+                @include listStyle;
+                margin-right: 8px;
+                a{
+                    color:$grigino;
+                    @include sottolineatura;
+                    i{
+                        color: $primary;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    // Navbar
+    .navbar-uno{
+        height: 50px;
+        background-color: $nero;
+        color:$bianco;
+        @include flex;
+        .brand-img {
+          margin: 0 25px;
+        }
+        ul{
+            @include flex;
+            li{
+                @include listStyle;
+                padding-right: 20px;
+                a{
+                    color:$bianco;
+                    @include sottolineatura;
+                }
+            }
+        }
+    }
+    // jumbotron
+    #jumbotron{
+        height:calc(100vh - 160px);
+        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        @include flex;
+        justify-content: space-around;
+        .essentials {
+          color: white;
+          h1, h3 {
+            padding-bottom: $padding10;
+          }
+          ul li {
+            padding-bottom: $padding10 / 2;
+            list-style: none;
+          }
+        }
+        .banner {
+          height: 400px;
+          width: 440px;
+          background-color: $nero;
+        }
+    }
+
+    .navbar-due{
+        height:65px;
+        background-color: #333;
+        color:$grigino;
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        ul li {
+          list-style: none;
+          display: inline-block;
+          line-height: 65px;
+          text-transform: uppercase;
+          padding-right: 40px;
+        }
+    }
+}
