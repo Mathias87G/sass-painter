@@ -1,0 +1,66 @@
+// jumbotron
+#jumbotron {
+    height:calc(100vh - 160px);
+    background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @include flex;
+    justify-content: space-around;
+    .essentials {
+      padding-left: $padding10 * 20;
+      color: white;
+      h1, h3 {
+        padding-bottom: $padding10;
+      }
+      ul li {
+        padding-bottom: $padding10 / 2;
+        list-style: none;
+      }
+    }
+    .banner {
+      height: 400px;
+      width: 440px;
+      background-color: $nero;
+      position: relative;
+      #refund {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      .offer {
+        padding-left: $padding10;
+        h2 {
+          color: $bianco;
+          padding-top: $padding10 * 5;
+        }
+        h3 {
+          color: $grigino;
+          padding: $padding10 0;
+        }
+        #buy {
+          padding: $padding10 $padding10 * 3;
+          background-color: $primary;
+          color: $bianco;
+          cursor: pointer;
+          @include noborder;
+          &:hover{
+            background-color: lighten($primary, 20);
+          }
+        }
+      }
+      .limited {
+        background-color: $grigino;
+        margin: 10px;
+
+        padding: $padding10;
+        h3 {
+            text-transform: uppercase;
+          }
+        p {
+            padding-top: $padding10;
+        }
+      }
+    }
+}

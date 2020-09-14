@@ -33,59 +33,38 @@ header {
         .brand-img {
           margin: 0 25px;
         }
-        ul{
+        ul {
             @include flex;
-            li{
+            li {
                 @include listStyle;
                 padding-right: 20px;
-                a{
+                a {
                     color:$bianco;
                     @include sottolineatura;
                 }
             }
         }
     }
-    // jumbotron
-    #jumbotron{
-        height:calc(100vh - 160px);
-        background-image: url('https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-
-        @include flex;
-        justify-content: space-around;
-        .essentials {
-          color: white;
-          h1, h3 {
-            padding-bottom: $padding10;
-          }
-          ul li {
-            padding-bottom: $padding10 / 2;
-            list-style: none;
-          }
-        }
-        .banner {
-          height: 400px;
-          width: 440px;
-          background-color: $nero;
-        }
-    }
 
     .navbar-due{
         height:65px;
-        background-color: #333;
-        color:$grigino;
+        background-color: $grigino;
         position: -webkit-sticky;
         position: sticky;
         top: 0;
         z-index: 10;
+        padding-left: 50px;
         ul li {
           list-style: none;
           display: inline-block;
           line-height: 65px;
+          text-align: center;
           text-transform: uppercase;
-          padding-right: 40px;
+          padding: 0 $padding10 * 2;
+          &:hover {
+            background-color: $bianco;
+            cursor: pointer;
+          }
         }
     }
 }

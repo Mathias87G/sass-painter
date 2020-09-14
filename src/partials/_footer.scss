@@ -1,0 +1,34 @@
+footer {
+    #footer-top{
+        height:230px;
+        background-color: $grigino;
+        display: flex;
+        justify-content: center;
+        .col-ctn{
+          width: 80%;
+          display: flex;
+          .col {
+          width: 25%;
+          height: 100%;
+          padding-top: $padding10 * 1.5;
+          h4 {
+            padding-bottom: $padding10;
+          }
+          ul li {
+            @include listStyle;
+            text-transform: capitalize;
+            padding-bottom: $padding10 / 2;
+          }
+          .social i {
+            color: $nero;
+            font-size: 30px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    #footer-bottom{
+        height:90px;
+        background-color: #1e1e1e;
+    }
+}

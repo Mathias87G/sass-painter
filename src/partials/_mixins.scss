@@ -16,3 +16,8 @@
     background-image: url("/icons/#{$name}.svg");
   }
 }
+
+@mixin noborder{
+  border: none;
+  outline: none;
+}

@@ -14,81 +14,6 @@ h1 {
   color: white;
 }
 
-main section.flexible {
-  height: 2015px;
-  background-color: #222222;
-}
-
-main section.effects-filter {
-  height: 500px;
-  background-color: #ececec;
-}
-
-main section.effects-filter h2 {
-  text-align: center;
-  padding: 30px 0;
-  color: #101010;
-}
-
-main section.effects-filter .list-tool {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main section.effects-filter .list-tool .img {
-  position: relative;
-  padding: 0 10px;
-}
-
-main section.effects-filter .list-tool .img h3 {
-  position: absolute;
-  left: 50%;
-  bottom: 10px;
-  transform: translateX(-50%);
-  color: white;
-}
-
-main section.effects-filter .list-tool .img img {
-  height: 250px;
-  width: 250px;
-}
-
-main section.cards {
-  height: 590px;
-  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-main section.cards .card {
-  width: 470px;
-  background-color: #fff;
-  margin: 0 10px;
-  display: flex;
-  flex-direction: column;
-  padding: 60px 40px 80px;
-  text-align: center;
-}
-
-main section.cards .card h3 {
-  margin-bottom: 20px;
-}
-
-footer #footer-top {
-  height: 230px;
-  background-color: #ececec;
-}
-
-footer #footer-bottom {
-  height: 90px;
-  background-color: #1e1e1e;
-}
-
 header {
   display: initial;
 }
@@ -151,7 +76,31 @@ header .navbar-uno ul li a {
   text-decoration: none;
 }
 
-header #jumbotron {
+header .navbar-due {
+  height: 65px;
+  background-color: #ececec;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding-left: 50px;
+}
+
+header .navbar-due ul li {
+  list-style: none;
+  display: inline-block;
+  line-height: 65px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 20px;
+}
+
+header .navbar-due ul li:hover {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+#jumbotron {
   height: calc(100vh - 160px);
   background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/hero-painteressentials-7.jpg");
   background-repeat: no-repeat;
@@ -162,41 +111,177 @@ header #jumbotron {
   justify-content: space-around;
 }
 
-header #jumbotron .essentials {
+#jumbotron .essentials {
+  padding-left: 200px;
   color: white;
 }
 
-header #jumbotron .essentials h1,
-header #jumbotron .essentials h3 {
+#jumbotron .essentials h1,
+#jumbotron .essentials h3 {
   padding-bottom: 10px;
 }
 
-header #jumbotron .essentials ul li {
+#jumbotron .essentials ul li {
   padding-bottom: 5px;
   list-style: none;
 }
 
-header #jumbotron .banner {
+#jumbotron .banner {
   height: 400px;
   width: 440px;
   background-color: #101010;
+  position: relative;
 }
 
-header .navbar-due {
-  height: 65px;
-  background-color: #333;
+#jumbotron .banner #refund {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#jumbotron .banner .offer {
+  padding-left: 10px;
+}
+
+#jumbotron .banner .offer h2 {
+  color: #fff;
+  padding-top: 50px;
+}
+
+#jumbotron .banner .offer h3 {
   color: #ececec;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 10;
+  padding: 10px 0;
 }
 
-header .navbar-due ul li {
-  list-style: none;
-  display: inline-block;
-  line-height: 65px;
+#jumbotron .banner .offer #buy {
+  padding: 10px 30px;
+  background-color: #009cff;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+#jumbotron .banner .offer #buy:hover {
+  background-color: #66c4ff;
+}
+
+#jumbotron .banner .limited {
+  background-color: #ececec;
+  margin: 10px;
+  padding: 10px;
+}
+
+#jumbotron .banner .limited h3 {
   text-transform: uppercase;
-  padding-right: 40px;
+}
+
+#jumbotron .banner .limited p {
+  padding-top: 10px;
+}
+
+main section.flexible {
+  height: 2015px;
+  background-color: #222222;
+}
+
+main section.effects-filter {
+  height: 500px;
+  background-color: #ececec;
+}
+
+main section.effects-filter h2 {
+  text-align: center;
+  padding: 30px 0;
+  color: #101010;
+}
+
+main section.effects-filter .list-tool {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section.effects-filter .list-tool .img {
+  position: relative;
+  padding: 0 10px;
+}
+
+main section.effects-filter .list-tool .img h3 {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  color: white;
+}
+
+main section.effects-filter .list-tool .img img {
+  height: 250px;
+  width: 250px;
+}
+
+main section.cards {
+  height: 590px;
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main section.cards .card {
+  height: 250px;
+  width: 470px;
+  background-color: #fff;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 40px 80px;
+  text-align: center;
+}
+
+main section.cards .card h3 {
+  margin-bottom: 20px;
+}
+
+footer #footer-top {
+  height: 230px;
+  background-color: #ececec;
+  display: flex;
+  justify-content: center;
+}
+
+footer #footer-top .col-ctn {
+  width: 80%;
+  display: flex;
+}
+
+footer #footer-top .col-ctn .col {
+  width: 25%;
+  height: 100%;
+  padding-top: 15px;
+}
+
+footer #footer-top .col-ctn .col h4 {
+  padding-bottom: 10px;
+}
+
+footer #footer-top .col-ctn .col ul li {
+  list-style: none;
+  text-transform: capitalize;
+  padding-bottom: 5px;
+}
+
+footer #footer-top .col-ctn .col .social i {
+  color: #101010;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+footer #footer-bottom {
+  height: 90px;
+  background-color: #1e1e1e;
 }
 
