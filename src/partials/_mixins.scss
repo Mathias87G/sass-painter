@@ -1,0 +1,12 @@
+@mixin flex{
+    display: flex;
+    align-items: center;
+}
+
+@mixin sottolineatura{
+    text-decoration: none;
+}
+
+@mixin listStyle{
+    list-style: none;
+}

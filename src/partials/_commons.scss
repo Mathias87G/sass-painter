@@ -1,0 +1,116 @@
+body{
+    font-family: 'Arimo', sans-serif;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+header{
+    height:100vh;
+    #topbar{
+        height:45px;
+        background-color: blue;
+        background-color: $nero;
+        color:$grigino;
+        @include flex;
+        justify-content: flex-end;
+        ul{
+            @include flex;
+            li{
+                @include listStyle;
+                margin-right: 8px;
+                a{
+                    color:$grigino;
+                    @include sottolineatura;
+                    i{
+                        color: $primary;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+    .navbar-uno{
+        height:50px;
+        background-color: $nero;
+        color:$bianco;
+        @include flex;
+        .brand-img {
+          margin: 0 25px;
+        }
+        ul{
+            @include flex;
+            li{
+                @include listStyle;
+                padding-right: 20px;
+                a{
+                    color:$bianco;
+                    @include sottolineatura;
+                }
+            }
+        }
+    }
+    #jumbotron{
+        height:calc(100vh - 160px);
+        background-color: #000;
+    }
+    .navbar-due{
+        height:65px;
+        background-color: #333;
+        color:$grigino;
+    }
+}
+
+main{
+    section.flexible{
+        height:2015px;
+        background-color: #222222;
+    }
+    section.effects-filter{
+        height: 500px;
+        background-color: $grigino;
+        .list-tool {
+          @include flex;
+          justify-content: center;
+          .img img {
+            height: 250px;
+            width: 250px;
+          }
+        }
+    }
+    section.cards{
+        height: 590px;
+        background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/brushpacks-bg.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include flex;
+        justify-content: center;
+        .card{
+            width:470px;
+            background-color: $bianco;
+            margin:0 10px;
+            display: flex;
+            flex-direction: column;
+            padding:60px 40px 80px;
+            text-align: center;
+            h3{
+                margin-bottom:20px;
+            }
+        }
+    }
+}
+
+footer{
+    #footer-top{
+        height:230px;
+        background-color: $grigino;
+    }
+    #footer-bottom{
+        height:90px;
+        background-color: #1e1e1e;
+    }
+}
