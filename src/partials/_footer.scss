@@ -30,5 +30,27 @@ footer {
     #footer-bottom{
         height:90px;
         background-color: #1e1e1e;
+        @include flex;
+        justify-content: space-around;
+        .garanzie img {
+          padding-right: $padding10 * 2;
+        }
+        .menu {
+          @include flex;
+        }
+        .menu li {
+          @include listStyle;
+          color: $grigino;
+          display: inline-block;
+          padding-right: $padding10;
+          &:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+        .menu small {
+          color: $bianco;
+          padding-left: $padding10 *3;
+        }
     }
 }

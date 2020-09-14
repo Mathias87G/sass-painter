@@ -1,8 +1,4 @@
-main{
-    section.flexible{
-        height:2015px;
-        background-color: #222222;
-    }
+main {
     section.effects-filter{
         height: 500px;
         background-color: $grigino;
@@ -30,6 +26,14 @@ main{
             }
           }
         }
+    }
+    .parallax {
+      background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+      height: 1200px;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
     }
     section.cards{
         height: 590px;

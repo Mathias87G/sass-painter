@@ -180,11 +180,6 @@ header .navbar-due ul li:hover {
   padding-top: 10px;
 }
 
-main section.flexible {
-  height: 2015px;
-  background-color: #222222;
-}
-
 main section.effects-filter {
   height: 500px;
   background-color: #ececec;
@@ -218,6 +213,15 @@ main section.effects-filter .list-tool .img h3 {
 main section.effects-filter .list-tool .img img {
   height: 250px;
   width: 250px;
+}
+
+main .parallax {
+  background-image: url("https://www.painterartist.com/static/ptr/product_content/painteressentials/7/image-bg-01.jpg");
+  height: 1200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main section.cards {
@@ -283,5 +287,34 @@ footer #footer-top .col-ctn .col .social i {
 footer #footer-bottom {
   height: 90px;
   background-color: #1e1e1e;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer #footer-bottom .garanzie img {
+  padding-right: 20px;
+}
+
+footer #footer-bottom .menu {
+  display: flex;
+  align-items: center;
+}
+
+footer #footer-bottom .menu li {
+  list-style: none;
+  color: #ececec;
+  display: inline-block;
+  padding-right: 10px;
+}
+
+footer #footer-bottom .menu li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer #footer-bottom .menu small {
+  color: #fff;
+  padding-left: 30px;
 }
 
